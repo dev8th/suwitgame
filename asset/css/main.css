@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-top,
+.fixed-bottom {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.fixed-top {
+    top: 0;
+}
+
+.fixed-bottom {
+    bottom: 0;
+}
+
+.papanskor,
+.list-tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pemain,
+.komputer,
+button {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color:grey;
+}
+
+.pemain,
+.komputer,
+.versus,
+button {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.pemain {
+    background-color: blue;
+}
+
+.komputer {
+    background-color: red;
+}
+
+.onthecenter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: calc(100vh - 100px);
+    padding: 10px;
+}
+
+.notif {
+    display: block;
+}
+
+button {
+    border: 1px solid white;
+}
+
+button:active{
+    background-color: #4e4b4b;
+}
+
+.list-tombol {
+    background-color: grey;
+}
+
+.onthecenter h3{
+    margin:0;
+}
+
+.pilihan{
+    display:flex;
+}
+
+.pilihanpemain,
+.pilihankomputer{
+    padding:0px 35px 0px 35px;
+}
