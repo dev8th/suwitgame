@@ -104,22 +104,25 @@
         }else{
         
             hitung=0;
-            for(i=0;i<=totalstep;i++){
-                arr[i]=localStorage.getItem("step"+i); 
-                if(localStorage.getItem("step"+i)==choose){
-                    var a = i+1;
-                    if(localStorage.getItem("step"+a)==b){
-                        hitung++;
-                    }else{
-                        if(hitung!=0){
-                            arr_filter = [localStorage.getItem("step"+a),hitung];
-                        }
-                        b = localStorage.getItem("step"+a);
-                        hitung=1;
-                        
-                    }
+            for(i=0;i<totalstep;i++){
+            arr[i]=localStorage.getItem("step"+i); 
+
+            if(localStorage.getItem("step"+i)==choose){
+                var a = i+1;
+
+                if(localStorage.getItem("step"+a)==b){
+                hitung++;
+                }else{
+                if(hitung!=0){
+                    arr_filter[i] = [localStorage.getItem("step"+a),hitung];
                 }
-            }  	
+                b = localStorage.getItem("step"+a);
+                hitung=1;
+
+                } 
+
+            }
+            }   	
             
             //TIMPA STEP
             for(i=0;i<=totalstep;i++){
